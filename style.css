@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+  --back-imgs: #90ee90;
+}
+
+body {
+  margin: 2% 2%;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--body-bg-color);
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 23% 35% 20%;
+  grid-template-rows: 7% 12% 7% 13% 15% 22% 20%;
+  grid-template-areas:
+    "profile projects projects"
+    "profile postGH-1 postGH-2"
+    "contacts recentPost recentPost"
+    "contacts post post"
+    "tec . ."
+    "exp . ."
+    "edu . .";
+
+  column-gap: 3%;
+  row-gap: 2%;
+}
+
+.profile {
+  grid-area: profile;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 20vw;
+  height: 35vh;
+  min-width: 195px;
+  min-height: 209px;
+
+  border: 2px solid var(--bg-cards);
+  border-radius: 20px;
+
+  background-color: var(--bg-cards);
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: var(--back-imgs);
+}
+
+.profile p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.profile h2 {
+  margin-bottom: 7px;
+}
+
+.myprojects {
+  grid-area: projects;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0px 35px;
+
+  border: 1px solid var(--bg-cards);
+  border-radius: 20px;
+
+  width: 69vw;
+  height: 12vh;
+  min-width: 600;
+  min-height: 100;
+
+  background-color: var(--bg-cards);
+}
+
+.postGH-1 {
+  grid-area: postGH-1;
+  padding: 15px 0px 0px 30px;
+
+  border: 1px solid var(--bg-cards);
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  width: 33vw;
+  height: 20vh;
+  min-width: 300;
+  min-height: 100;
+
+  background-color: var(--bg-cards);
+}
+
+.postGH-1 img {
+  margin-right: 25px;
+}
+
+.postGH-1 p {
+  font-size: 0.9em;
+  margin-top: 30px;
+}
+
+.postGH-1 .postGH-1-baixo {
+  display: flex;
+  margin-left: 2px;
+}
+
+.postGH-2 {
+  grid-area: postGH-2;
+  padding: 15px 0px 0px 30px;
+
+  border: 1px solid var(--bg-cards);
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  width: 33vw;
+  height: 20vh;
+  min-width: 300;
+  min-height: 100;
+
+  background-color: var(--bg-cards);
+}
+
+.postGH-2 img {
+  margin-right: 25px;
+}
+
+.postGH-2 p {
+  font-size: 0.9em;
+}
+
+.recentPost {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 35px;
+
+  grid-area: recentPost;
+
+  border: 1px solid var(--bg-cards);
+  border-radius: 20px;
+
+  width: 69vw;
+  height: 12vh;
+  min-width: 600;
+  min-height: 100;
+
+  background-color: var(--bg-cards);
+}
+
+.post {
+  grid-area: post;
+
+  border: 1px solid var(--bg-cards);
+  border-radius: 20px;
+
+  width: 69vw;
+  height: 20vh;
+  min-width: 300;
+  min-height: 100;
+
+  background-color: var(--bg-cards);
+}
+
+.contacts {
+  grid-area: contacts;
+
+  display: inline-flexbox;
+  padding: 35px 0px 0px 45px;
+
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  width: 20vw;
+  height: 38vh;
+  min-width: 195px;
+  min-height: 350px;
+
+  background-color: var(--bg-cards);
+}
+
+.contacts img {
+  margin-right: 15px;
+}
+
+.contacts p {
+  display: flex;
+
+  margin: 15px 0px;
+}
+
+.tecnologias {
+  grid-area: tec;
+
+  border: 1px solid var(--bg-cards);
+  border-radius: 20px;
+
+  width: 20vw;
+  height: 25vh;
+  min-width: 195px;
+  min-height: 163px;
+
+  background-color: var(--bg-cards);
+}
+
+.tecnologias h3 {
+  padding-left: 30px;
+}
+
+.experience {
+  grid-area: exp;
+
+  border: 1px solid var(--bg-cards);
+  border-radius: 20px;
+
+  width: 20vw;
+  height: 38vh;
+  min-width: 195px;
+  min-height: 209px;
+
+  background-color: var(--bg-cards);
+}
+
+.experience h3 {
+  padding-left: 30px;
+}
+
+.education {
+  grid-area: edu;
+
+  border: 1px solid var(--bg-cards);
+  border-radius: 20px;
+
+  width: 20vw;
+  height: 38vh;
+  min-width: 195px;
+  min-height: 209px;
+
+  background-color: var(--bg-cards);
+}
+
+.education h3 {
+  padding-left: 30px;
+}
+
+li {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+p,
+h2,
+h3 {
+  color: var(--text-color);
+}
